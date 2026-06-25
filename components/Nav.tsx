@@ -14,7 +14,7 @@ export default function Nav() {
           href="#top"
           className="font-mono text-sm tracking-tight text-ink focus-ring"
         >
-          MI<span className="text-clay">.</span>ENG
+          Victor<span className="text-clay">.</span>ENG
         </a>
         <nav className="flex gap-6">
           {links.map((l) => (

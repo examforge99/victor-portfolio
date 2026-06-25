@@ -20,9 +20,9 @@ const groups = [
     ],
   },
   {
-    title: "Resourceful by constraint",
+    title: "Lean, mobile-first workflow",
     items: [
-      "Full stack delivery via Termux, no local machine",
+      "Full production stack run from Termux",
       "GitHub web editor as primary IDE",
       "API testing in-terminal with curl & jq",
     ],
@@ -59,4 +59,4 @@ export default function Approach() {
       </div>
     </section>
   );
-}
+              }

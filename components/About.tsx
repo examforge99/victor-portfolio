@@ -22,10 +22,19 @@ export default function About() {
               of an afterthought.
             </p>
             <p>
-              Most of my work happens entirely on a phone — Termux, the
-              GitHub web editor, and Vercel, no local machine. It's a
-              constraint that forced me to get fluent fast, and it hasn't
-              slowed down what I ship.
+              I built my first real product for my own solar installation
+              business, Elite Solution Tech World — design, SEO, and a
+              live database backend, solo. It taught me that shipping
+              software is never just the frontend; it's the whole system a
+              business runs on.
+            </p>
+            <p>
+              I ship everything from a phone — Termux, the GitHub web
+              editor, and Vercel make up my entire stack, no laptop
+              involved. It's forced me to know my tools at a level most
+              developers never need to: every workflow had to be rebuilt
+              from scratch to work this way, and that's exactly the kind of
+              problem-solving I bring to a client's product.
             </p>
           </div>
         </div>

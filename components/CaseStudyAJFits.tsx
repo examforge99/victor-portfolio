@@ -23,8 +23,8 @@ export default function CaseStudyAJFits() {
             AJFits
           </h3>
           <p className="mt-2 max-w-xl text-slate">
-            A fashion e-commerce PWA built for OAU students — and for my
-            sister, who owns the store.
+            A fashion e-commerce PWA built for OAU students — and for the
+            store owner who needed it to actually run her business.
           </p>
         </div>
       </div>
@@ -67,7 +67,7 @@ export default function CaseStudyAJFits() {
           </h4>
           <p className="mt-4 leading-relaxed text-slate">
             Site-wide promotions and coupon codes both apply at checkout,
-            synced with Paystax-side amounts so the total a customer sees
+            synced with Paystack-side amounts so the total a customer sees
             is always the total they're charged. Students shouldn't have to
             do math to trust a discount.
           </p>
@@ -105,71 +105,75 @@ export default function CaseStudyAJFits() {
           </h4>
           <p className="mt-4 leading-relaxed text-slate">
             The first version pushed a notification per product — noisy, and
-            customers tuned it out. I replaced it with an admin-controlled
-            broadcast system: one message, optional deep-link to a category,
-            and open-rate tracking so my sister can see what's actually
-            landing. Under the hood, a service worker handles{" "}
-            <code className="rounded bg-ink/5 px-1 py-0.5 font-mono text-sm">
-              notificationclick
-            </code>{" "}
-            to route customers straight to the right page.
+            customers tuned it out. I replaced it with a simple
+            admin-controlled broadcast: one message, an optional link to a
+            specific category, and a read-rate count so the store owner can
+            see what's actually landing. Tap the notification and it opens
+            straight to the right page — no hunting around for what it was
+            about.
           </p>
         </div>
       </div>
 
-      {/* security audit — text only, no screenshot */}
+      {/* security audit — text only, no screenshot, plain-language */}
       <div className="mt-16 rounded-xl border border-ink/15 bg-ink p-8 text-paper">
         <p className="font-mono text-xs uppercase tracking-wider text-clay">
-          Security audit
+          Security check
         </p>
         <h4 className="mt-2 font-serif text-2xl font-semibold">
-          Finding the gaps before someone else does
+          I went looking for problems before a stranger could find them first
         </h4>
+        <p className="mt-3 text-sm leading-relaxed text-paper/70">
+          Before launch, I ran a full security pass on the store — the kind
+          of check most small e-commerce sites skip until something goes
+          wrong.
+        </p>
         <ul className="mt-5 space-y-3 text-sm leading-relaxed text-paper/85">
           <li>
-            <span className="font-mono text-clay">→</span> Found and fixed a
-            row-level security leak that exposed push-subscription
-            credentials to anonymous requests.
+            <span className="font-mono text-clay">→</span> Closed a gap that
+            could have let outsiders see private customer notification data
+            — fixed before it was ever exposed.
           </li>
           <li>
-            <span className="font-mono text-clay">→</span> Replaced a
-            structurally broken <code className="font-mono">is_admin()</code>{" "}
-            discount policy with an explicit deny-by-default rule.
+            <span className="font-mono text-clay">→</span> Tightened the
+            rules around who's allowed to create or edit discounts, so only
+            the store owner ever can.
           </li>
           <li>
-            <span className="font-mono text-clay">→</span> Investigated a
-            suspected IDOR on the orders endpoint and confirmed it wasn't
-            exploitable — verified, not assumed.
+            <span className="font-mono text-clay">→</span> Tested whether a
+            customer could view another customer's order by guessing a link
+            — confirmed they can't.
           </li>
           <li>
-            <span className="font-mono text-clay">→</span> Audited HTTP
-            security headers end to end and confirmed correct configuration.
+            <span className="font-mono text-clay">→</span> Checked the
+            site's behind-the-scenes safety settings end to end and
+            confirmed everything's locked down correctly.
           </li>
         </ul>
       </div>
 
-      {/* extra builds, condensed */}
+      {/* extra builds, framed by the thinking behind each one */}
       <div className="mt-16">
         <p className="font-mono text-xs uppercase tracking-wider text-slate">
-          Also shipped
+          More thinking behind the build
         </p>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           {[
             {
-              t: "Countdown discount banner",
-              d: "A site-wide banner with a live countdown timer to create urgency around active promotions.",
+              t: "Make a deal feel urgent, not desperate",
+              d: "A countdown banner on every page nudges shoppers to act now instead of \"maybe later\" — without ever feeling like a pushy pop-up.",
             },
             {
-              t: "WhatsApp customer care",
-              d: "One-tap deep link straight into a WhatsApp chat — no contact form, no friction.",
+              t: "Meet customers where they already are",
+              d: "Most students would rather send a WhatsApp message than fill out a form. One tap opens a chat directly — no extra steps between a question and an answer.",
             },
             {
-              t: "Android app via PWABuilder",
-              d: "Packaged the PWA as an installable TWA APK for students who prefer an app icon over a browser tab.",
+              t: "Remove the trust barrier of a website",
+              d: "Some shoppers trust an app icon on their home screen more than a browser tab. So the store installs like a real app, while still being the same site underneath.",
             },
             {
-              t: "Always-on free tier",
-              d: "A GitHub Actions cron job that pings Supabase to prevent free-tier auto-pausing.",
+              t: "Never let the store quietly go offline",
+              d: "Free hosting tools can fall asleep from inactivity. A background check keeps the store awake around the clock, so a customer never lands on a broken page.",
             },
           ].map((item) => (
             <div
@@ -188,4 +192,4 @@ export default function CaseStudyAJFits() {
       </div>
     </div>
   );
-              }
+}

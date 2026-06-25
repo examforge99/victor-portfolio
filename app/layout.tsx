@@ -21,7 +21,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mi — Product Engineer",
+  title: "Victor — Product Engineer",
   description:
     "Product engineer designing from user psychology first. Full-stack builder of AJFits and ExamForge. EE student at Obafemi Awolowo University.",
 };

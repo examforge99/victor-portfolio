@@ -34,8 +34,8 @@ export default function Contact() {
         </div>
 
         <p className="mt-16 font-mono text-[11px] text-paper/40">
-          © {new Date().getFullYear()} — Built phone-only, on Next.js & Vercel.
-        </p>
+  © {new Date().getFullYear()} — Designed and engineered by Victor Darasimi.
+</p>
       </div>
     </section>
   );

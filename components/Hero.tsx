@@ -14,11 +14,11 @@ export default function Hero() {
               <em className="italic text-clay">match</em>.
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-slate sm:text-lg">
-              Full-stack builder and Electrical/Electronics Engineering
-              student at Obafemi Awolowo University. I've shipped a solar
-              business's web presence, a fashion e-commerce platform, and an
-              exam-prep SaaS — each one starting from how people actually
-              behave.
+              Full-stack builder aspiring to be an Electrical/Electronics
+Engineer — and already thinking like one. I've shipped a solar
+business's web presence, a fashion e-commerce platform, and an
+exam-prep SaaS — each one starting from how people actually
+behave.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">

@@ -16,10 +16,10 @@ export default function About() {
             </p>
             <p>
               That instinct is backed by an engineer's discipline. I'm
-              studying Electrical/Electronics Engineering at OAU, which
-              shows up in how I work — systems thinking, tracing failure
-              modes, and treating security as a first-class feature instead
-              of an afterthought.
+aspiring to become an Electrical/Electronics Engineer, and
+that mindset already shows up in how I work — systems
+thinking, tracing failure modes, and treating security as a
+first-class feature instead of an afterthought.
             </p>
             <p>
               I built my first real product for my own solar installation
